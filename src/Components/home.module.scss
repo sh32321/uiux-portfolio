@@ -1,0 +1,23 @@
+@import "../scss/global.scss";
+
+.headerImg {
+  width: 32%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: -10px;
+}
+.title {
+  font-size: 40px;
+  font-family: $teritaryFont;
+  font-weight: 600;
+}
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -8px;
+}

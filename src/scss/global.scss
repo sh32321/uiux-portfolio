@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600;700&family=Mulish:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+
+$primaryFont: "Mulish", sans-serif, monospace;
+$secondaryFont: "Playfair Display", monospace, sans-serif;
+$teritaryFont: "Cormorant Infant", serif;
+
+$dark: #565656;
+$grey: #747474;
+$lightGrey: #f2f2f2;
+$link: #468cbe;
+
+body {
+  font-family: "Mulish", sans-serif monospace;
+  overflow-x: hidden;
+  color: #565656;
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+@mixin for-mobile-screen {
+  @media screen and (max-width: 1078px) {
+    @content;
+  }
+}
+
+button {
+  padding: 12px 24px;
+  background-color: $lightGrey;
+  color: $dark;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.4;
+    transition: 0.4s;
+  }
+}
+
+@mixin active {
+  color: #fff;
+  background-color: #828282;
+  transition: 0.4s;
+}
+
+@mixin viewBtn {
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: $dark;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease;
+    &:hover {
+      background-color: rgb(180, 180, 180);
+    }
+  }
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,137 @@
+@import "../../scss/global.scss";
+
+img {
+  width: 100%;
+}
+
+.hero {
+  // background: linear-gradient(90deg, #3e3e3e 0%, #2b2b2b 100%);
+  img {
+    width: 46%;
+    display: flex;
+    margin: auto;
+  }
+}
+
+.projectTypeWrap {
+  @include center;
+  gap: 6%;
+  .titleBox {
+    text-align: left;
+  }
+}
+.titleWrap {
+  text-align: center;
+  margin: 40px 0 40px 0;
+  .title {
+    font-family: $secondaryFont;
+  }
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin: 0 0 20px 20px;
+}
+.container {
+  width: 66%;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+
+ul {
+  margin-bottom: 24px;
+  .insightsWrap {
+    // font-size: 18px;
+    font-weight: 500;
+    list-style: square;
+    padding-bottom: 8px;
+  }
+}
+.phase {
+  background-color: $lightGrey;
+  padding: 24px;
+  font-size: 24px;
+  font-family: $secondaryFont;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step {
+  color: #c8c8c8;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 8% 0px 4% 0px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.stepWrap {
+  margin-top: 10%;
+  .prototype {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin-top: 12px;
+      display: flex;
+      &:hover {
+        text-decoration: underline;
+        transition: 0.6s;
+      }
+      img {
+        width: 24px;
+        margin-right: 4px;
+      }
+      color: $link;
+    }
+  }
+}
+
+.keyWrap {
+  display: flex;
+  flex-direction: column;
+
+  .key {
+    padding: 16px 32px;
+    background-color: $lightGrey;
+    margin-left: 16px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    img {
+      width: 24px;
+      height: auto;
+      margin-right: 8px;
+    }
+  }
+}
+
+.UTWrap {
+  img:nth-child(even) {
+    margin: 6rem 0 6rem 0;
+  }
+}
+
+.finalDesignWrap {
+  background-color: $lightGrey;
+  padding: 40px 40px 40px 0px;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  margin-top: -8%;
+
+  img {
+    width: 18%;
+    margin-left: 32px;
+    border-radius: 12px;
+  }
+}

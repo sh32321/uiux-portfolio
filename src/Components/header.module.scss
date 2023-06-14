@@ -1,0 +1,29 @@
+@import "../scss/global.scss";
+
+.navWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 16px 100px 0px;
+  @include for-mobile-screen {
+    flex-wrap: nowrap;
+    padding: 40px 24px;
+  }
+  align-items: center;
+
+  li {
+    color: $grey;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    &:hover {
+      color: $grey;
+      letter-spacing: 2px;
+      transition: 0.5s;
+    }
+  }
+  li:nth-child(1) {
+    padding-left: 16px;
+  }
+}

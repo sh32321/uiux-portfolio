@@ -1,0 +1,58 @@
+@import "../../scss/global.scss";
+
+img {
+  width: 100%;
+}
+
+.titleWrap {
+  text-align: center;
+  margin: 40px 0 40px 0;
+  .title {
+    font-family: $secondaryFont;
+  }
+}
+
+.desc {
+  font-size: 18px;
+  padding: 0px 32px 0px 32px;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+
+.step {
+  color: #c8c8c8;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 8% 0px 4% 0px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.stepWrap {
+  margin-top: 16%;
+  .prototype {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.githubWrap {
+  display: flex;
+  align-items: center;
+  color: #468cbe;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  img {
+    width: 32px;
+    margin-right: 4px;
+  }
+}

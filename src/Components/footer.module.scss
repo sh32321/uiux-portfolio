@@ -1,0 +1,21 @@
+@import "../scss/global.scss";
+
+.footerWrap {
+  margin-top: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: #b5b5b5;
+}
+
+a {
+  padding: 8px;
+  cursor: pointer;
+}
+.icons {
+  &:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+  }
+}
