@@ -5,7 +5,9 @@ import { Link } from "react-router-dom"
 const Header = () => {
   return (
     <div className={styles.navWrap}>
-      <Link to='/'>
+      <Link
+        to='https://drive.google.com/file/d/1Q8uBhN_fQmGF9Psae40-xxnMvNhnKJWf/view?usp=sharing'
+        target='_blank'>
         <li>Resume</li>
       </Link>
     </div>
