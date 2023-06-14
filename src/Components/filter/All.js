@@ -16,8 +16,11 @@ const All = () => {
           <img src={Moviescape} />
           <div class={styles.info}>
             <h1>Moviescape</h1>
-            <p>UIUX, End to End Design</p>
-            <Link to='/work/moviescape' className={styles.viewBtn}>
+            <p>UIUX, End-to-end Design</p>
+            <Link
+              to='/work/moviescape'
+              target='_blank'
+              className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>
@@ -26,8 +29,8 @@ const All = () => {
           <img src={Accio} />
           <div class={styles.info}>
             <h1>Accio</h1>
-            <p>UIUX, End to End Design</p>
-            <Link to='/work/accio' className={styles.viewBtn}>
+            <p>UIUX, End-to-end Design</p>
+            <Link to='/work/accio' target='_blank' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>
@@ -39,7 +42,7 @@ const All = () => {
           <div class={styles.info}>
             <h1>Chatwis.ai</h1>
             <p>UI, Design to Develop</p>
-            <Link to='/work/chatwis' className={styles.viewBtn}>
+            <Link to='/work/chatwis' target='_blank' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>
@@ -49,7 +52,7 @@ const All = () => {
           <div class={styles.info}>
             <h1>Foodie Recipe</h1>
             <p>Design, Coding, React</p>
-            <Link to='/work/recipe' className={styles.viewBtn}>
+            <Link to='/work/recipe' target='_blank' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>
@@ -59,7 +62,10 @@ const All = () => {
           <div class={styles.info}>
             <h1>Ousar Academy</h1>
             <p>Responsive Design</p>
-            <Link to='/work/ousar-academy' className={styles.viewBtn}>
+            <Link
+              to='/work/ousar-academy'
+              target='_blank'
+              className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>
@@ -69,7 +75,7 @@ const All = () => {
           <div class={styles.info}>
             <h1>Jose Gallery</h1>
             <p>Design, Coding, React</p>
-            <Link to='/work/jose' className={styles.viewBtn}>
+            <Link to='/work/jose' target='_blank' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>

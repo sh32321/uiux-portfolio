@@ -199,6 +199,9 @@ const Accio = () => {
       <div className={styles.container}>
         <div className={styles.step}>Conclusion</div>
         <p>
+          In this project, I prioritized the metrics of the problem people
+          nowadays face. However, my suggestions for this project are all
+          aligned with my team. That's how we came up with this brand name:
           Accio means “I summon” from the Harry Potter spell. We hope to summon
           friends to exercise together with the magic power of “Accio.”
         </p>

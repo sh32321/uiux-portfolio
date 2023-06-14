@@ -214,8 +214,12 @@ const Moviescape = () => {
       <div className={styles.container}>
         <div className={styles.step}>Conclusion</div>
         <p>
-          Moviescape is designed to offer a better end to end experience for
-          moviegoing as well as to flock your loved one to you!
+          Moviescape gave me a lot of chances to interview people and test this
+          product. However, from the process, I began to explore design
+          alternatives and discovered that those findings opened my mind and
+          eventually led to a better final solution. Moviescape is designed to
+          offer a better end-to-end experience for moviegoing as well as to
+          flock your loved one to you!
         </p>
         <div className={styles.step}>Next Step</div>
         <ul>
