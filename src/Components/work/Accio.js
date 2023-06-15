@@ -17,13 +17,13 @@ import A1 from "../../img/accio/accio-1.png"
 import A2 from "../../img/accio/accio-2.png"
 import A3 from "../../img/accio/accio-3.png"
 import A4 from "../../img/accio/accio-4.png"
-import A5 from "../../img/accio/accio-5.png"
 import A6 from "../../img/accio/accio-6.png"
 import A7 from "../../img/accio/accio-7.png"
 import A8 from "../../img/accio/accio-8.png"
 import A9 from "../../img/accio/accio-9.png"
 import A10 from "../../img/accio/accio-10.png"
 import A11 from "../../img/accio/accio-11.png"
+import A12 from "../../img/accio/accio-12.png"
 import TopBtn from "../TopBtn"
 import { Link } from "react-scroll"
 
@@ -186,13 +186,13 @@ const Accio = () => {
         <img src={A2} alt='movie app' />
         <img src={A3} alt='movie app' />
         <img src={A4} alt='movie app' />
-        <img src={A5} alt='movie app' />
         <img src={A6} alt='movie app' />
         <img src={A7} alt='movie app' />
         <img src={A8} alt='movie app' />
         <img src={A9} alt='movie app' />
         <img src={A10} alt='movie app' />
         <img src={A11} alt='movie app' />
+        <img src={A12} alt='movie app' />
       </div>
       <p className={styles.phase}>Reflection</p>
       <div className={styles.container}>
