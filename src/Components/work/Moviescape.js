@@ -9,7 +9,6 @@ import Bulb from "../../icons/lightbulb-on-outline.svg"
 import Video from "../../video/moviescape.mp4"
 import PA from "../../img/moviescape/PA.png"
 import PB from "../../img/moviescape/PB.png"
-import PC from "../../img/moviescape/PC.png"
 import Footer from "../Footer"
 import Hero from "../../img/moviescape/inception-hero.svg"
 import Alert from "../../icons/alert.svg"
@@ -25,11 +24,13 @@ import Payment from "../../img/moviescape/payment.png"
 import SendTickets from "../../img/moviescape/send-tickets.png"
 import Detail from "../../img/moviescape/Detail.png"
 import Reviews from "../../img/moviescape/Users Review.png"
-import Link from "../../icons/link.svg"
+import LinkToFile from "../../icons/link.svg"
+import { Link } from "react-scroll"
+import TopBtn from "../TopBtn"
 
 const Moviescape = () => {
   return (
-    <div>
+    <div id='top'>
       <Header />
       <div className={styles.hero}>
         <img src={Hero} alt='movie app' />
@@ -55,7 +56,7 @@ const Moviescape = () => {
           </div>
           <div className={styles.titleBox}>
             <h4>Role</h4>
-            <p>Project Owner</p>
+            <p>Solo Designer</p>
           </div>
         </div>
       </div>
@@ -167,7 +168,6 @@ const Moviescape = () => {
           <div className={styles.UTWrap}>
             <img src={PA} alt='movie app' />
             <img src={PB} alt='movie app' />
-            {/* <img src={PC} alt='movie app' /> */}
           </div>
         </div>
         <div className={styles.stepWrap}>
@@ -204,7 +204,7 @@ const Moviescape = () => {
             <a
               href='https://www.figma.com/proto/WUblK6BD0PKc2rDo1N9N9t/UX-research?page-id=252%3A2162&type=design&node-id=252-2922&viewport=417%2C498%2C0.25&scaling=scale-down&starting-point-node-id=252%3A2794&show-proto-sidebar=1'
               target='_blank'>
-              <img src={Link} />
+              <img src={LinkToFile} />
               Link to Figma prototype
             </a>
           </div>
@@ -237,6 +237,9 @@ const Moviescape = () => {
             popcorn promotion to increase business value
           </li>
         </ul>
+        <Link to='top' spy={true} smooth={true}>
+          <TopBtn />
+        </Link>
       </div>
       <Footer />
     </div>

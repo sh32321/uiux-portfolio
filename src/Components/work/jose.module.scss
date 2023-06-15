@@ -15,12 +15,19 @@ img {
 .desc {
   font-size: 18px;
   padding: 0px 32px 0px 32px;
+  @include for-mobile-screen {
+    padding: 0;
+  }
 }
 
 .container {
   width: 60%;
   margin: auto;
   margin-bottom: 10rem;
+  @include for-mobile-screen {
+    width: 100%;
+    padding: 0px 24px;
+  }
 }
 
 .step {

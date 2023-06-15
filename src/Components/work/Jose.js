@@ -3,12 +3,13 @@ import styles from "./jose.module.scss"
 import Header from "../Header"
 import Footer from "../Footer"
 import Video from "../../video/Jose.mp4"
-import Github from "../../img/foodie/github.svg"
-import Link from "../../icons/link.svg"
+import LinkToFile from "../../icons/link.svg"
+import TopBtn from "../TopBtn"
+import { Link } from "react-scroll"
 
 const Jose = () => {
   return (
-    <div>
+    <div id='top'>
       <Header />
       <div className={styles.titleWrap}>
         <h1 className={styles.title}>Jose Gallery</h1>
@@ -38,16 +39,19 @@ const Jose = () => {
           <a
             href='https://joseheart8.netlify.app/'
             className={styles.githubWrap}>
-            <img src={Link} alt='github' className={styles.icon} />
+            <img src={LinkToFile} alt='github' className={styles.icon} />
             View the website
           </a>
           <a
             href='https://github.com/Lada496/your-photo-album/blob/main/README.md'
             className={styles.githubWrap}>
-            <img src={Link} alt='github' className={styles.icon} />
+            <img src={LinkToFile} alt='github' className={styles.icon} />
             Related articles
           </a>
         </div>
+        <Link to='top' spy={true} smooth={true}>
+          <TopBtn />
+        </Link>
       </div>
       <Footer />
     </div>

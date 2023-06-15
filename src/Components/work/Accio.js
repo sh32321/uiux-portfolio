@@ -5,10 +5,7 @@ import Bulb from "../../icons/lightbulb-on-outline.svg"
 import InterviewResult from "../../img/accio/Interview-results.png"
 import CA from "../../img/accio/CA.png"
 import Logo from "../../img/accio/Logo.png"
-import Color from "../../img/accio/colorConcept.png"
-import Typo from "../../img/accio/Typo.png"
 import Sitemap from "../../img/accio/siteMap.png"
-import FinalDesign from "../../img/accio/finalDesign.png"
 import BM from "../../img/accio/BM.png"
 import Quantitative from "../../img/accio/Quantitive.png"
 import Footer from "../Footer"
@@ -27,10 +24,12 @@ import A8 from "../../img/accio/accio-8.png"
 import A9 from "../../img/accio/accio-9.png"
 import A10 from "../../img/accio/accio-10.png"
 import A11 from "../../img/accio/accio-11.png"
+import TopBtn from "../TopBtn"
+import { Link } from "react-scroll"
 
 const Accio = () => {
   return (
-    <div>
+    <div id='top'>
       <Header />
       <div className={styles.hero}>
         <img src={Hero} alt='movie app' />
@@ -152,7 +151,7 @@ const Accio = () => {
       </div>
       <p className={styles.phase}>Design</p>
       <div className={styles.container}>
-        <div>
+        {/* <div>
           <div className={styles.step}>Logo Concept</div>
           <div className={styles.logowrap}>
             <img
@@ -166,7 +165,7 @@ const Accio = () => {
               brand image.
             </p>
           </div>
-        </div>
+        </div> */}
         <div>
           <div className={styles.stepWrap}>
             <div className={styles.step}>Design System</div>
@@ -221,6 +220,9 @@ const Accio = () => {
             with friends while exercising
           </li>
         </ul>
+        <Link to='top' spy={true} smooth={true}>
+          <TopBtn />
+        </Link>
       </div>
       <Footer />
     </div>

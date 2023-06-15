@@ -24,11 +24,13 @@ import DM6 from "../../img/chatwis/DM-6.png"
 import DM7 from "../../img/chatwis/DM-7.png"
 import DM8 from "../../img/chatwis/DM-8.png"
 import DM9 from "../../img/chatwis/DM-9.png"
-import Link from "../../icons/link.svg"
+import LinkToFile from "../../icons/link.svg"
+import TopBtn from "../TopBtn"
+import { Link } from "react-scroll"
 
 const Chatwis = () => {
   return (
-    <div>
+    <div id='top'>
       <Header />
       <div className={styles.hero}>
         <img src={Hero} alt='movie app' />
@@ -114,11 +116,14 @@ const Chatwis = () => {
             <a
               href='https://www.figma.com/proto/GT7DloE4yOMWhzYflqe5CO/Chatwis.ai?page-id=432%3A7208&type=design&node-id=1696-11620&viewport=729%2C-81%2C0.13&scaling=scale-down&starting-point-node-id=435%3A13543&show-proto-sidebar=1'
               target='_blank'>
-              <img src={Link} />
+              <img src={LinkToFile} />
               Link to Figma prototype
             </a>
           </div>
         </div>
+        <Link to='top' spy={true} smooth={true}>
+          <TopBtn />
+        </Link>
       </div>
       <Footer />
     </div>

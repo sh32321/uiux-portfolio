@@ -9,10 +9,16 @@ img {
     width: 50%;
     display: flex;
     margin: auto;
+    @include for-mobile-screen {
+      width: 100%;
+    }
   }
 }
 .projectTypeWrap {
   @include center;
+  @include for-mobile-screen {
+    margin: 0 24px;
+  }
   gap: 6%;
   .titleBox {
     text-align: left;
@@ -29,12 +35,19 @@ img {
 .desc {
   font-size: 18px;
   padding: 0px 32px 0px 32px;
+  @include for-mobile-screen {
+    padding: 0;
+  }
 }
 .container {
   padding-top: 3rem;
   width: 60%;
   margin: auto;
   margin-bottom: 10rem;
+  @include for-mobile-screen {
+    width: 100%;
+    padding: 0px 24px;
+  }
 }
 
 ul {
@@ -103,12 +116,6 @@ ul {
   }
 }
 
-.logoWrap {
-  @include center;
-  margin: auto;
-  width: 66%;
-}
-
 .finalDesignWrap {
   background-color: $lightGrey;
   padding: 40px 40px 40px 0px;
@@ -119,8 +126,41 @@ ul {
   scroll-behavior: smooth;
   margin-top: -8%;
 
-  img {
+  .desktop {
+    width: 64%;
+    @include for-mobile-screen {
+      width: 120%;
+    }
+  }
+
+  .tablet {
+    width: 30%;
+    @include for-mobile-screen {
+      width: 70%;
+    }
+  }
+
+  .mobile {
     width: 18%;
+    @include for-mobile-screen {
+      width: 50%;
+    }
+  }
+
+  .wireframe {
+    width: 40%;
+    @include for-mobile-screen {
+      width: 80%;
+    }
+  }
+  .wireframeSmall {
+    width: 30%;
+    @include for-mobile-screen {
+      width: 40%;
+    }
+  }
+
+  img {
     margin-left: 32px;
     border-radius: 12px;
   }

@@ -5,15 +5,20 @@ img {
 }
 
 .hero {
-  // background: linear-gradient(90deg, #3e3e3e 0%, #2b2b2b 100%);
   img {
     width: 46%;
     display: flex;
     margin: auto;
+    @include for-mobile-screen {
+      width: 100%;
+    }
   }
 }
 .projectTypeWrap {
   @include center;
+  @include for-mobile-screen {
+    margin: 0 24px;
+  }
   gap: 6%;
   .titleBox {
     text-align: left;
@@ -35,6 +40,10 @@ img {
   width: 60%;
   margin: auto;
   margin-bottom: 10rem;
+  @include for-mobile-screen {
+    width: 100%;
+    padding: 0px 24px;
+  }
 }
 
 ul {
@@ -74,6 +83,13 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    video {
+      @include for-mobile-screen {
+        width: 80%;
+        height: auto;
+      }
+    }
 
     a {
       margin-top: 12px;
@@ -138,5 +154,8 @@ ul {
     width: 20%;
     margin-left: 32px;
     border-radius: 12px;
+    @include for-mobile-screen {
+      width: 60%;
+    }
   }
 }

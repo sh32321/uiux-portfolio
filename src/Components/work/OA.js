@@ -25,10 +25,12 @@ import M2 from "../../img/OA/M-menu-expanded.png"
 import M6 from "../../img/OA/M-submission.png"
 import T2 from "../../img/OA/T-course.png"
 import T1 from "../../img/OA/T-homepage.png"
+import TopBtn from "../TopBtn"
+import { Link } from "react-scroll"
 
 const OA = () => {
   return (
-    <div>
+    <div id='top'>
       <Header />
       <div className={styles.hero}>
         <img src={Hero} alt='dashboard' />
@@ -72,12 +74,12 @@ const OA = () => {
         </div>
       </div>
       <div className={styles.finalDesignWrap}>
-        <img src={W1} alt='dashboard' style={{ width: "40%" }} />
-        <img src={W2} alt='dashboard' style={{ width: "40%" }} />
-        <img src={W3} alt='dashboard' style={{ width: "40%" }} />
-        <img src={W4} alt='dashboard' style={{ width: "30%" }} />
-        <img src={W5} alt='dashboard' />
-        <img src={W6} alt='dashboard' />
+        <img src={W1} alt='dashboard' className={styles.wireframe} />
+        <img src={W2} alt='dashboard' className={styles.wireframe} />
+        <img src={W3} alt='dashboard' className={styles.wireframe} />
+        <img src={W4} alt='dashboard' className={styles.wireframe} />
+        <img src={W5} alt='dashboard' className={styles.wireframeSmall} />
+        <img src={W6} alt='dashboard' className={styles.wireframeSmall} />
       </div>
       <div className={styles.container}>
         <div className={styles.stepWrap}>
@@ -85,13 +87,13 @@ const OA = () => {
         </div>
       </div>
       <div className={styles.finalDesignWrap}>
-        <img src={D1} alt='dashboard' style={{ width: "64%" }} />
-        <img src={D2} alt='dashboard' style={{ width: "64%" }} />
-        <img src={D3} alt='dashboard' style={{ width: "64%" }} />
-        <img src={D4} alt='dashboard' style={{ width: "64%" }} />
-        <img src={D5} alt='dashboard' style={{ width: "64%" }} />
-        <img src={D6} alt='dashboard' style={{ width: "64%" }} />
-        <img src={D7} alt='dashboard' style={{ width: "64%" }} />
+        <img src={D1} alt='dashboard' className={styles.desktop} />
+        <img src={D2} alt='dashboard' className={styles.desktop} />
+        <img src={D3} alt='dashboard' className={styles.desktop} />
+        <img src={D4} alt='dashboard' className={styles.desktop} />
+        <img src={D5} alt='dashboard' className={styles.desktop} />
+        <img src={D6} alt='dashboard' className={styles.desktop} />
+        <img src={D7} alt='dashboard' className={styles.desktop} />
       </div>
       <div className={styles.container}>
         <div className={styles.stepWrap}>
@@ -99,14 +101,19 @@ const OA = () => {
         </div>
       </div>
       <div className={styles.finalDesignWrap}>
-        <img src={T1} alt='dashboard' style={{ width: "30%" }} />
-        <img src={T2} alt='dashboard' style={{ width: "30%" }} />
-        <img src={M1} alt='dashboard' />
-        <img src={M2} alt='dashboard' />
-        <img src={M3} alt='dashboard' />
-        <img src={M4} alt='dashboard' />
-        <img src={M5} alt='dashboard' />
-        <img src={M6} alt='dashboard' />
+        <img src={T1} alt='dashboard' className={styles.tablet} />
+        <img src={T2} alt='dashboard' className={styles.tablet} />
+        <img src={M1} alt='dashboard' className={styles.mobile} />
+        <img src={M2} alt='dashboard' className={styles.mobile} />
+        <img src={M3} alt='dashboard' className={styles.mobile} />
+        <img src={M4} alt='dashboard' className={styles.mobile} />
+        <img src={M5} alt='dashboard' className={styles.mobile} />
+        <img src={M6} alt='dashboard' className={styles.mobile} />
+      </div>
+      <div className={styles.container}>
+        <Link to='top' spy={true} smooth={true}>
+          <TopBtn />
+        </Link>
       </div>
       <Footer />
     </div>

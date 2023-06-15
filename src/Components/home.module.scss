@@ -2,6 +2,9 @@
 
 .headerImg {
   width: 32%;
+  @include for-mobile-screen {
+    width: 80%;
+  }
 }
 
 section {
@@ -10,6 +13,10 @@ section {
   justify-content: center;
   align-items: center;
   padding: -10px;
+
+  @include for-mobile-screen {
+    margin: 0 24px;
+  }
 }
 .title {
   font-size: 40px;
@@ -20,4 +27,5 @@ section {
   font-size: 20px;
   font-weight: 400;
   margin-top: -8px;
+  text-align: center;
 }

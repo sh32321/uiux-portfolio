@@ -4,6 +4,8 @@ import styles from "./home.module.scss"
 import Header from "./Header"
 import Footer from "./Footer"
 import All from "./filter/All"
+import { Link } from "react-scroll"
+import Arrow from "../icons/chevron-down.svg"
 
 const Home = () => {
   return (
@@ -15,8 +17,16 @@ const Home = () => {
           I am a UIUX designer and a React (front-end) lover in Canada.
         </p>
         <img src={HeaderImg} className={styles.headerImg} />
+        <Link to='work' spy={true} smooth={true}>
+          <button>
+            View my work
+            <img src={Arrow} alt='arrow' />
+          </button>
+        </Link>
       </section>
-      <All />
+      <div id='work'>
+        <All />
+      </div>
       <Footer />
     </>
   )

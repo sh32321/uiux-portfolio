@@ -28,7 +28,7 @@ body {
 }
 
 button {
-  padding: 12px 24px;
+  padding: 12px 18px 12px 24px;
   background-color: $lightGrey;
   color: $dark;
   border: none;
@@ -37,10 +37,14 @@ button {
   font-weight: 400;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   &:hover {
     opacity: 0.4;
     transition: 0.4s;
+  }
+  img {
+    width: 32px;
   }
 }
 

@@ -5,11 +5,13 @@ import Video from "../../video/Foodie.mp4"
 import Design from "../../img/foodie/color-logo.png"
 import GitHub from "../../img/foodie/github.svg"
 import Footer from "../Footer"
-import Link from "../../icons/link.svg"
+import LinkToFile from "../../icons/link.svg"
+import TopBtn from "../TopBtn"
+import { Link } from "react-scroll"
 
 const recipe = () => {
   return (
-    <div>
+    <div id='top'>
       <Header />
       <div className={styles.titleWrap}>
         <h1 className={styles.title}>Foodie</h1>
@@ -49,10 +51,13 @@ const recipe = () => {
           <a
             href='https://github.com/sh32321/recipe'
             className={styles.githubWrap}>
-            <img src={Link} alt='github' className={styles.icon} />
+            <img src={LinkToFile} alt='github' className={styles.icon} />
             View the website
           </a>
         </div>
+        <Link to='top' spy={true} smooth={true}>
+          <TopBtn />
+        </Link>
       </div>
       <Footer />
     </div>

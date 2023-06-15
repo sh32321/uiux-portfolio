@@ -3,15 +3,6 @@
 .container {
   margin-top: 8%;
 }
-.cardsWrap {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 4rem 8rem;
-  // padding: 4rem;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
 
 .bigCardsWrap {
   display: flex;
@@ -19,9 +10,14 @@
   justify-content: center;
   align-items: center;
   gap: 80px;
+
+  @include for-mobile-screen {
+    margin: 0 24px;
+    gap: 32px;
+  }
   .bigCard {
-    width: 50%;
-    height: 450px;
+    width: 42%;
+    height: 460px;
     border-radius: 16px;
     padding: 1.5rem;
     background: white;
@@ -30,6 +26,10 @@
     align-items: flex-end;
     transition: 0.4s ease-out;
     box-shadow: 2px 12px 6px rgba(0, 0, 0, 0.2);
+
+    @include for-mobile-screen {
+      width: 100%;
+    }
   }
   .bigCard:hover {
     transform: translateY(20px);
@@ -60,6 +60,8 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    object-fit: cover;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -83,6 +85,18 @@
   }
 }
 
+.cardsWrap {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 4rem 8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  @include for-mobile-screen {
+    margin: 32px 24px 0 24px;
+  }
+}
+
 .card {
   width: 40%;
   height: 360px;
@@ -94,6 +108,9 @@
   align-items: flex-end;
   transition: 0.4s ease-out;
   box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.2);
+  @include for-mobile-screen {
+    width: 100%;
+  }
 }
 .card:hover {
   transform: translateY(20px);
