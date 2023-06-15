@@ -1,9 +1,9 @@
 @import "../scss/global.scss";
 
 .headerImg {
-  width: 32%;
+  width: 30%;
   @include for-mobile-screen {
-    width: 80%;
+    width: 65%;
   }
 }
 
@@ -22,10 +22,13 @@ section {
   font-size: 40px;
   font-family: $teritaryFont;
   font-weight: 600;
+  @include for-mobile-screen {
+    margin-top: -12px;
+  }
 }
 .description {
   font-size: 20px;
   font-weight: 400;
-  margin-top: -8px;
+  margin-top: -24px;
   text-align: center;
 }
