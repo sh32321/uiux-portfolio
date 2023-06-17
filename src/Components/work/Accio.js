@@ -17,6 +17,7 @@ import A1 from "../../img/accio/accio-1.png"
 import A2 from "../../img/accio/accio-2.png"
 import A3 from "../../img/accio/accio-3.png"
 import A4 from "../../img/accio/accio-4.png"
+import A5 from "../../img/accio/accio-5.png"
 import A6 from "../../img/accio/accio-6.png"
 import A7 from "../../img/accio/accio-7.png"
 import A8 from "../../img/accio/accio-8.png"
@@ -186,6 +187,7 @@ const Accio = () => {
         <img src={A2} alt='movie app' />
         <img src={A3} alt='movie app' />
         <img src={A4} alt='movie app' />
+        <img src={A5} alt='movie app' />
         <img src={A6} alt='movie app' />
         <img src={A7} alt='movie app' />
         <img src={A8} alt='movie app' />
