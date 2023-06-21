@@ -70,16 +70,9 @@ const OA = () => {
           <img src={Sitemap} alt='dashboard' />
         </div>
         <div className={styles.stepWrap}>
-          <div className={styles.step}>Wireframe (Desktop to Mobile)</div>
+          <div className={styles.step}>Wireframe</div>
+          <img src={W1} alt='dashboard' />
         </div>
-      </div>
-      <div className={styles.finalDesignWrap}>
-        <img src={W1} alt='dashboard' className={styles.wireframe} />
-        <img src={W2} alt='dashboard' className={styles.wireframe} />
-        <img src={W3} alt='dashboard' className={styles.wireframe} />
-        <img src={W4} alt='dashboard' className={styles.wireframe} />
-        <img src={W5} alt='dashboard' className={styles.wireframeSmall} />
-        <img src={W6} alt='dashboard' className={styles.wireframeSmall} />
       </div>
       <div className={styles.container}>
         <div className={styles.stepWrap}>

@@ -24,8 +24,10 @@ const recipe = () => {
         <div>
           <div className={styles.step}>Background</div>
           <p className={styles.desc}>
-            Foodie is my personal school project from design to development.
-            It's a responsiveness friendly website!
+            Foodie is my personal school project from scratch. I am responsible
+            from design to development which I utilized React a front-end
+            language to implement all the logic functions. It's also a
+            responsiveness-friendly website!
           </p>
         </div>
         <div className={styles.stepWrap}>

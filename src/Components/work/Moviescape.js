@@ -21,7 +21,10 @@ import H5 from "../../img/moviescape/add tickets-hp.png"
 import H6 from "../../img/moviescape/select seats.png"
 import Confirmation from "../../img/moviescape/confirmation.png"
 import Payment from "../../img/moviescape/payment.png"
-import SendTickets from "../../img/moviescape/send-tickets.png"
+import SendTickets from "../../img/moviescape/sendTickets.png"
+import Recipient from "../../img/moviescape/selectRecipient.png"
+import TicketType from "../../img/moviescape/selectTicketsType.png"
+import SentSuccessful from "../../img/moviescape/sentSuccessful.png"
 import Detail from "../../img/moviescape/Detail.png"
 import Reviews from "../../img/moviescape/Users Review.png"
 import LinkToFile from "../../icons/link.svg"
@@ -182,17 +185,20 @@ const Moviescape = () => {
         </div>
       </div>
       <div className={styles.finalDesignWrap}>
+        <img src={H3} alt='movie app' />
+        <img src={H2} alt='movie app' />
         <img src={H1} alt='movie app' />
         <img src={Detail} alt='movie app' />
         <img src={Reviews} alt='movie app' />
-        <img src={H2} alt='movie app' />
-        <img src={H3} alt='movie app' />
-        <img src={H4} alt='movie app' />
         <img src={H5} alt='movie app' />
         <img src={H6} alt='movie app' />
         <img src={Confirmation} alt='movie app' />
         <img src={Payment} alt='movie app' />
+        <img src={H4} alt='movie app' />
         <img src={SendTickets} alt='movie app' />
+        <img src={Recipient} alt='movie app' />
+        <img src={TicketType} alt='movie app' />
+        <img src={SentSuccessful} alt='movie app' />
       </div>
       <div className={styles.container}>
         <div className={styles.stepWrap}>
