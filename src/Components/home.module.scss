@@ -32,3 +32,11 @@ section {
   margin-top: -24px;
   text-align: center;
 }
+
+.arrowBtn {
+  width: 100px;
+  margin-top: -20px;
+  @include for-mobile-screen {
+    width: 70px;
+  }
+}

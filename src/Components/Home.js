@@ -5,7 +5,8 @@ import Header from "./Header"
 import Footer from "./Footer"
 import All from "./filter/All"
 import { Link } from "react-scroll"
-import Arrow from "../icons/chevron-down.svg"
+import Lottie from "lottie-react"
+import Arrow from "../icons/11514-swipe-down-arrows.json"
 
 const Home = () => {
   return (
@@ -18,10 +19,12 @@ const Home = () => {
         </p>
         <img src={HeaderImg} className={styles.headerImg} />
         <Link to='work' spy={true} smooth={true}>
-          <button>
-            View my work
-            <img src={Arrow} alt='arrow' />
-          </button>
+          <Lottie
+            animationData={Arrow}
+            loop={true}
+            // style={{ width: "100px" }}
+            className={styles.arrowBtn}
+          />
         </Link>
       </section>
       <div id='work'>
