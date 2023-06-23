@@ -9,7 +9,7 @@ const Header = () => {
         <li>Home</li>
       </Link>
       <Link
-        to='https://drive.google.com/file/d/1qgmX00kzLSpimWZWeDlnWVLDLpIZUZpG/view?usp=sharing'
+        to='https://drive.google.com/file/d/1fe-rGdiXGklB8jkHN_bOCISMqhfKBvj3/view?usp=sharing'
         target='_blank'>
         <li>Resume</li>
       </Link>
