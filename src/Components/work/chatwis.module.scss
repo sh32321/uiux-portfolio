@@ -30,6 +30,9 @@ img {
 .titleWrap {
   text-align: center;
   margin: 40px 0 40px 0;
+  p {
+    font-weight: 400;
+  }
   .title {
     font-family: $secondaryFont;
   }
