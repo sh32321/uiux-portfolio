@@ -24,6 +24,9 @@ img {
   gap: 6%;
   .titleBox {
     text-align: left;
+    P {
+      font-weight: 400;
+    }
   }
 }
 .titleWrap {
@@ -32,17 +35,11 @@ img {
   .title {
     font-family: $secondaryFont;
   }
+  .titleDesc {
+    font-weight: 400;
+  }
 }
 
-.sectionTitle {
-  font-weight: 600;
-  margin: 0 0 20px 20px;
-}
-
-.sectionTitle {
-  font-weight: 600;
-  margin: 40px 0;
-}
 .logowrap {
   display: flex;
 }

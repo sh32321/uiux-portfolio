@@ -12,55 +12,80 @@ const All = () => {
   return (
     <div className={styles.container}>
       <div className={styles.bigCardsWrap}>
-        <div class={styles.bigCard}>
-          <img src={Moviescape} />
-          <div class={styles.info}>
-            <h1>Moviescape</h1>
-            <p>UIUX, End-to-end Design</p>
-            <Link
-              to='/work/moviescape'
-              target='_top'
-              className={styles.viewBtn}>
-              <li>View More</li>
-            </Link>
-          </div>
+        <div className={styles.blockWrap}>
+          <Link to='/work/moviescape' target='_top'>
+            <div
+              class={styles.bigCard}
+              style={{ backgroundColor: "#fff5dc", marginBottom: "24px" }}>
+              <img src={Moviescape} />
+              <div class={styles.info}>
+                <h1>Moviescape</h1>
+                <p>UIUX, End-to-end Design</p>
+                <Link
+                  to='/work/moviescape'
+                  target='_top'
+                  className={styles.viewBtn}>
+                  <li>View More</li>
+                </Link>
+              </div>
+            </div>
+          </Link>
         </div>
-        <div class={styles.bigCard}>
-          <img src={Accio} />
-          <div class={styles.info}>
-            <h1>Accio</h1>
-            <p>UIUX, End-to-end Design</p>
-            <Link to='/work/accio' target='_top' className={styles.viewBtn}>
-              <li>View More</li>
-            </Link>
+        <Link to='/work/accio' target='_top'>
+          <div
+            class={styles.bigCard}
+            style={{
+              background: "linear-gradient(180deg, #E0EAFC 0%, #CFDEF3 100%",
+              marginBottom: "32px",
+            }}>
+            <img src={Accio} />
+            <div class={styles.info}>
+              <h1>Accio</h1>
+              <p>UIUX, End-to-end Design</p>
+              <Link to='/work/accio' target='_top' className={styles.viewBtn}>
+                <li>View More</li>
+              </Link>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <div class={styles.cardsWrap}>
-        <div class={styles.card}>
+        <div
+          class={styles.card}
+          style={{
+            backgroundColor: "#FFEACB",
+          }}>
           <img src={Chatwis} />
           <div class={styles.info}>
-            <h1>Chatwis.ai</h1>
+            <h2>Chatwis.ai</h2>
             <p>UI, Design to Develop</p>
             <Link to='/work/chatwis' target='_top' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>
         </div>
-        <div class={styles.card}>
+        <div
+          class={styles.card}
+          style={{
+            backgroundColor: "#E8FFEA",
+          }}>
           <img src={Recipe} />
           <div class={styles.info}>
-            <h1>Foodie Recipe</h1>
+            <h2>Foodie Recipe</h2>
             <p>Design, Coding, React</p>
             <Link to='/work/recipe' target='_top' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
           </div>
         </div>
-        <div class={styles.card}>
+        <div
+          class={styles.card}
+          style={{
+            backgroundColor: "#FFFFEF",
+          }}>
           <img src={OA} />
           <div class={styles.info}>
-            <h1>Ousar Academy</h1>
+            <h2>Ousar Academy</h2>
             <p>Responsive Design</p>
             <Link
               to='/work/ousar-academy'
@@ -70,10 +95,14 @@ const All = () => {
             </Link>
           </div>
         </div>
-        <div class={styles.card}>
+        <div
+          class={styles.card}
+          style={{
+            backgroundColor: "#000000",
+          }}>
           <img src={Jose} />
           <div class={styles.info}>
-            <h1>Jose Gallery</h1>
+            <h2>Jose Gallery</h2>
             <p>Design, Coding, React</p>
             <Link to='/work/jose' target='_top' className={styles.viewBtn}>
               <li>View More</li>

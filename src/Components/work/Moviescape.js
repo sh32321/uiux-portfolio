@@ -40,7 +40,7 @@ const Moviescape = () => {
       </div>
       <div className={styles.titleWrap}>
         <h1 className={styles.title}>Moviescape</h1>
-        <p>
+        <p className={styles.titleDesc}>
           A better experience of purchasing movie tickets and enjoying it with
           your loved ones.
         </p>
@@ -61,6 +61,15 @@ const Moviescape = () => {
             <h4>Role</h4>
             <p>Solo Designer</p>
           </div>
+          <div className={styles.titleBox}>
+            <h4>Prototyoe</h4>
+            <a
+              href='https://www.figma.com/proto/WUblK6BD0PKc2rDo1N9N9t/UX-research?page-id=252%3A2162&type=design&node-id=252-2922&viewport=417%2C498%2C0.25&scaling=scale-down&starting-point-node-id=252%3A2794&show-proto-sidebar=1'
+              target='_blank'>
+              <img src={LinkToFile} />
+              Link to Figma
+            </a>
+          </div>
         </div>
       </div>
       <p className={styles.phase}>Overview</p>
@@ -78,7 +87,7 @@ const Moviescape = () => {
 
         <div className={styles.stepWrap}>
           <div className={styles.step}>Competitive Analysis</div>
-          <p className={styles.sectionTitle}>App experience considerations</p>
+          <p>App experience considerations</p>
           <ul>
             <li className={styles.insightsWrap}>
               The flow complexity from browsing to purchasing tickets
@@ -110,6 +119,7 @@ const Moviescape = () => {
           </ul>
           <img src={UserJourney} alt='movie app' />
         </div>
+
         <div className={styles.stepWrap}>
           <div className={styles.step}>Challenges</div>
           <div className={styles.keyWrap}>
@@ -124,7 +134,7 @@ const Moviescape = () => {
             </p>
             <p className={styles.key}>
               <img src={Alert} alt='movie app' />
-              How to faster users' purchase process?
+              How to improve users' purchase experience?
             </p>
           </div>
         </div>
@@ -146,6 +156,7 @@ const Moviescape = () => {
           </div>
         </div>
       </div>
+
       <p className={styles.phase}>Design Process</p>
       <div className={styles.container}>
         <div>
@@ -203,6 +214,18 @@ const Moviescape = () => {
       <div className={styles.container}>
         <div className={styles.stepWrap}>
           <div className={styles.step}>Prototype</div>
+          <p>A user flow of</p>
+          <ul>
+            <li className={styles.insightsWrap}>
+              Browsing movies and purchasing tickets
+            </li>
+            <li className={styles.insightsWrap}>
+              Sharing tickets with your friends
+            </li>
+            <li className={styles.insightsWrap}>
+              Checking the nearest location and movie showtime
+            </li>
+          </ul>
           <div className={styles.prototype}>
             <video controls width='40%' height='760px' autoplay>
               <source src={Video} type='video/mp4' />
@@ -211,7 +234,7 @@ const Moviescape = () => {
               href='https://www.figma.com/proto/WUblK6BD0PKc2rDo1N9N9t/UX-research?page-id=252%3A2162&type=design&node-id=252-2922&viewport=417%2C498%2C0.25&scaling=scale-down&starting-point-node-id=252%3A2794&show-proto-sidebar=1'
               target='_blank'>
               <img src={LinkToFile} />
-              Link to Figma prototype
+              Link to Figma
             </a>
           </div>
         </div>

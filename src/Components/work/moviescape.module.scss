@@ -17,12 +17,16 @@ img {
 
 .projectTypeWrap {
   @include center;
+  @include linkToFigma;
   @include for-mobile-screen {
     margin: 0 24px;
   }
-  gap: 6%;
+  gap: 5%;
   .titleBox {
     text-align: left;
+    P {
+      font-weight: 400;
+    }
   }
 }
 .titleWrap {
@@ -31,12 +35,11 @@ img {
   .title {
     font-family: $secondaryFont;
   }
+  .titleDesc {
+    font-weight: 400;
+  }
 }
 
-.sectionTitle {
-  font-weight: 600;
-  margin: 0 0 20px 20px;
-}
 .container {
   width: 66%;
   margin: auto;
@@ -51,7 +54,6 @@ img {
 ul {
   margin-bottom: 24px;
   .insightsWrap {
-    // font-size: 18px;
     font-weight: 500;
     list-style: square;
     padding-bottom: 8px;
@@ -92,29 +94,16 @@ ul {
         height: auto;
       }
     }
-
-    a {
-      margin-top: 12px;
-      display: flex;
-      &:hover {
-        text-decoration: underline;
-        transition: 0.6s;
-      }
-      img {
-        width: 24px;
-        margin-right: 4px;
-      }
-      color: $link;
-    }
+    @include linkToFigma;
   }
 }
 
 .keyWrap {
   display: flex;
   flex-direction: column;
-
   .key {
     padding: 16px 32px;
+    // height: 70px;
     background-color: $lightGrey;
     margin-left: 16px;
     border-radius: 12px;
@@ -122,6 +111,7 @@ ul {
     font-weight: 500;
     display: flex;
     align-items: center;
+
     img {
       width: 24px;
       height: auto;
@@ -142,7 +132,6 @@ ul {
   display: flex;
   align-items: center;
   overflow-x: scroll;
-  overflow-y: hidden;
   scroll-behavior: smooth;
   margin-top: -8%;
 

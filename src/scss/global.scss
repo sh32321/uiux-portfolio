@@ -19,10 +19,20 @@ body {
   li {
     list-style: none;
   }
+
+  p {
+    font-weight: 600;
+    line-height: 1.5;
+  }
 }
 
 @mixin for-mobile-screen {
-  @media screen and (max-width: 1078px) {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+@mixin for-tablet-screen {
+  @media only screen and (min-width: 769px) and (max-width: 1281px) {
     @content;
   }
 }
@@ -65,12 +75,16 @@ button {
     outline: none;
     border: none;
     border-radius: 3px;
-    color: black;
+    color: $dark;
     font-weight: 500;
     cursor: pointer;
     transition: 0.4s ease;
+    @media screen and (max-width: 1078px) {
+      padding: 8px;
+      font-weight: 400;
+    }
     &:hover {
-      background-color: rgb(180, 180, 180);
+      background-color: rgba(255, 255, 255, 0.5);
     }
   }
 }
@@ -79,4 +93,26 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin titleFont {
+  p {
+    font-weight: 400;
+  }
+}
+
+@mixin linkToFigma {
+  a {
+    margin-top: 12px;
+    display: flex;
+    &:hover {
+      text-decoration: underline;
+      transition: 0.6s;
+    }
+    img {
+      width: 20px;
+      margin-right: 4px;
+    }
+    color: $link;
+  }
 }

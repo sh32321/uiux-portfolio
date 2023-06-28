@@ -4,7 +4,6 @@ import Header from "../Header"
 import Bulb from "../../icons/lightbulb-on-outline.svg"
 import InterviewResult from "../../img/accio/Interview-results.png"
 import CA from "../../img/accio/CA.png"
-import Logo from "../../img/accio/Logo.png"
 import Sitemap from "../../img/accio/siteMap.png"
 import BM from "../../img/accio/BM.png"
 import Quantitative from "../../img/accio/Quantitive.png"
@@ -25,6 +24,7 @@ import A9 from "../../img/accio/accio-9.png"
 import A10 from "../../img/accio/accio-10.png"
 import A11 from "../../img/accio/accio-11.png"
 import A12 from "../../img/accio/accio-12.png"
+import Persona from "../../img/accio/accio-persona.png"
 import TopBtn from "../TopBtn"
 import { Link } from "react-scroll"
 
@@ -37,7 +37,7 @@ const Accio = () => {
       </div>
       <div className={styles.titleWrap}>
         <h1 className={styles.title}>Accio</h1>
-        <p>
+        <p className={styles.titleDesc}>
           Accio is a digital health playground. Connect with friends, create
           challenges and track your progress to meet your physical health goals.
         </p>
@@ -73,18 +73,16 @@ const Accio = () => {
         </div>
         <div className={styles.stepWrap}>
           <div className={styles.step}>Quantitative</div>
-          <p className={styles.sectionTitle}>
+          <p>
             We designed a survey to investigate what factors would foster and
-            maintain an exercise habit, and understand their exercise
-            experience.
+            maintain an exercise habit, and understand their exercise experience
+            in more detail.
           </p>
           <img src={Quantitative} alt='exercise app' />
         </div>
         <div className={styles.stepWrap}>
           <div className={styles.step}>Qualitative</div>
-          <p className={styles.sectionTitle}>
-            Findings after we conducted 1:1 interview with the interviewees
-          </p>
+          <p>Findings after we conducted 1:1 interview with the interviewees</p>
           <ul>
             <li className={styles.insightsWrap}>
               Most of the interviewees lost motivation when exercising without
@@ -138,6 +136,12 @@ const Accio = () => {
       <p className={styles.phase}>Define</p>
       <div className={styles.container}>
         <div className={styles.stepWrap}>
+          <div className={styles.step}>Persona</div>
+          <div className={styles.BMWrap}>
+            <img src={Persona} alt='exercise app' />
+          </div>
+        </div>
+        <div className={styles.stepWrap}>
           <div className={styles.step}>User Journey Map</div>
           <div className={styles.BMWrap}>
             <img src={JM} alt='exercise app' />
@@ -152,21 +156,6 @@ const Accio = () => {
       </div>
       <p className={styles.phase}>Design</p>
       <div className={styles.container}>
-        {/* <div>
-          <div className={styles.step}>Logo Concept</div>
-          <div className={styles.logowrap}>
-            <img
-              src={Logo}
-              alt='exercise app'
-              style={{ width: "100px", marginRight: "24px" }}
-            />
-            <p>
-              The shape of the logo of Accio is to convey the idea “Swish and
-              Flick” to summon all the friends around you, which matches our
-              brand image.
-            </p>
-          </div>
-        </div> */}
         <div>
           <div className={styles.stepWrap}>
             <div className={styles.step}>Design System</div>

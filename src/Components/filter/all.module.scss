@@ -2,33 +2,55 @@
 
 .container {
   margin-top: 8%;
-}
-
-.bigCardsWrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
 
   @include for-mobile-screen {
-    margin: 0 24px;
-    gap: 32px;
+    margin: 32px 24px 0 24px;
   }
+  @include for-tablet-screen {
+    margin: 48px 48px 0 48px;
+  }
+}
+
+// .blockWrap {
+//   display: inline;
+//   width: 80%;
+//   margin: auto;
+//   border: 1px solid;
+// }
+
+.bigCardsWrap {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+
   .bigCard {
-    width: 42%;
-    height: 460px;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    color: $dark;
+    height: auto;
     border-radius: 16px;
     padding: 1.5rem;
-    background: white;
-    position: relative;
     display: flex;
     align-items: flex-end;
     transition: 0.4s ease-out;
     box-shadow: 2px 12px 6px rgba(0, 0, 0, 0.2);
 
+    @include for-tablet-screen {
+      display: flex;
+      width: 100%;
+    }
+
     @include for-mobile-screen {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
   .bigCard:hover {
@@ -41,65 +63,52 @@
     opacity: 1;
     transform: translateY(0px);
   }
-  .bigCard:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-  }
+
   .bigCard img {
-    width: 100%;
+    width: 400px;
     height: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
-    object-fit: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    object-fit: contain;
     border-radius: 16px;
+
+    @include for-tablet-screen {
+      width: 60%;
+    }
+    @include for-mobile-screen {
+      width: 60%;
+    }
   }
-  .bigCard .info {
-    position: relative;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.5s;
+  color: $dark;
+  transition: 0.5s;
+}
+
+.bigCard .info h1 {
+  margin: 0px;
+  @include for-mobile-screen {
+    font-size: 1.5rem;
   }
-  .bigCard .info h1 {
-    margin: 0px;
-  }
-  .bigCard .info p {
-    letter-spacing: 1px;
-    font-size: 15px;
-    margin-top: 8px;
-  }
+}
+.bigCard .info p {
+  // letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 8px;
 }
 
 .cardsWrap {
   display: flex;
   flex-flow: row wrap;
-  margin: 4rem 8rem;
+  // margin: 4rem 8rem;
   justify-content: center;
   align-items: center;
   gap: 32px;
   @include for-mobile-screen {
-    margin: 32px 24px 0 24px;
+    // margin: 32px 24px 0 24px;
   }
 }
 
 .card {
   width: 40%;
-  height: 360px;
+  height: auto;
   border-radius: 15px;
   padding: 1.5rem;
   background: white;
@@ -137,10 +146,10 @@
   opacity: 0;
 }
 .card img {
-  width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 16px;
   position: absolute;
   top: 0;
   left: 0;

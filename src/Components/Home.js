@@ -22,7 +22,6 @@ const Home = () => {
           <Lottie
             animationData={Arrow}
             loop={true}
-            // style={{ width: "100px" }}
             className={styles.arrowBtn}
           />
         </Link>
