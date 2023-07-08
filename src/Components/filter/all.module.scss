@@ -42,7 +42,7 @@
 
     @include for-tablet-screen {
       display: flex;
-      width: 100%;
+      width: 60%;
     }
 
     @include for-mobile-screen {
