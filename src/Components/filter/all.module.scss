@@ -82,16 +82,18 @@
   transition: 0.5s;
 }
 
-.bigCard .info h1 {
-  margin: 0px;
-  @include for-mobile-screen {
-    font-size: 1.5rem;
+.info {
+  h1 {
+    margin: 2px;
+    text-align: center;
+
+    @include for-mobile-screen {
+      font-size: 1.5rem;
+    }
   }
-}
-.bigCard .info p {
-  // letter-spacing: 1px;
-  font-size: 14px;
-  margin-top: 8px;
+  p {
+    font-size: 14px;
+  }
 }
 
 .cardsWrap {
