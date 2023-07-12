@@ -30,6 +30,7 @@ import Reviews from "../../img/moviescape/Users Review.png"
 import LinkToFile from "../../icons/link.svg"
 import { Link } from "react-scroll"
 import TopBtn from "../TopBtn"
+import Userflow from "../../img/moviescape/User-flow.png"
 
 const Moviescape = () => {
   return (
@@ -103,8 +104,8 @@ const Moviescape = () => {
           <img src={CA} alt='movie app' />
         </div>
         <div className={styles.stepWrap}>
-          <div className={styles.step}>User Journey Map</div>
-          <p className={styles.sectionTitle}>Findings</p>
+          <div className={styles.step}>Journey Map</div>
+          <p className={styles.sectionTitle}>Key findings</p>
           <ul>
             <li className={styles.insightsWrap}>
               Users want to compare movie showtime according to different
@@ -157,17 +158,17 @@ const Moviescape = () => {
         </div>
       </div>
 
-      <p className={styles.phase}>Design Process</p>
+      <p className={styles.phase}>Iterative Design</p>
       <div className={styles.container}>
         <div>
-          <div className={styles.step}>Initial Low-Fi Wireframe</div>
+          <div className={styles.step}>Initial Wireframe</div>
           <img src={LoFi} alt='movie app' />
         </div>
         <div className={styles.stepWrap}>
           <div className={styles.step}>Usability Test</div>
           <p className={styles.sectionTitle}>
-            Findings after I conducted 1:1 usability test with 5 participants by
-            the low-fi prototype
+            Key findings after I conducted 1:1 usability test with 5
+            participants by the low-fi prototype
           </p>
           <ul>
             <li className={styles.insightsWrap}>
@@ -185,10 +186,16 @@ const Moviescape = () => {
           </div>
         </div>
         <div className={styles.stepWrap}>
-          <div className={styles.step}>Iteration</div>
+          <div className={styles.step}>Second Iteration</div>
           <div className={styles.UTWrap}>
             <img src={Iteration} alt='movie app' />
             <img src={IterationV2} alt='movie app' />
+          </div>
+        </div>
+        <div className={styles.stepWrap}>
+          <div className={styles.step}>User Flow</div>
+          <div className={styles.UTWrap}>
+            <img src={Userflow} alt='movie app' />
           </div>
         </div>
         <div className={styles.stepWrap}>
@@ -241,7 +248,7 @@ const Moviescape = () => {
       </div>
       <p className={styles.phase}>Reflection</p>
       <div className={styles.container}>
-        <div className={styles.step}>Conclusion</div>
+        <div className={styles.step}>Summary</div>
         <p>
           Moviescape gave me a lot of chances to interview people and test this
           product. However, from the process, I began to explore design

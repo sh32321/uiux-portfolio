@@ -64,6 +64,7 @@ const All = () => {
             </Link>
           </div>
         </div>
+
         <div
           class={styles.card}
           style={{
