@@ -20,7 +20,7 @@ const All = () => {
               <img src={Moviescape} />
               <div class={styles.info}>
                 <h1>Moviescape</h1>
-                <p>UIUX, End-to-end Design</p>
+                <p>A movie ticket booking app</p>
                 <Link
                   to='/work/moviescape'
                   target='_top'
@@ -41,7 +41,7 @@ const All = () => {
             <img src={Accio} />
             <div class={styles.info}>
               <h1>Accio</h1>
-              <p>UIUX, End-to-end Design</p>
+              <p>A digital health playground</p>
               <Link to='/work/accio' target='_top' className={styles.viewBtn}>
                 <li>View More</li>
               </Link>
