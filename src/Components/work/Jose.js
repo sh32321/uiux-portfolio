@@ -38,13 +38,15 @@ const Jose = () => {
           <div className={styles.step}>Link</div>
           <a
             href='https://joseheart8.netlify.app/'
-            className={styles.githubWrap}>
+            className={styles.githubWrap}
+            target='_blank'>
             <img src={LinkToFile} alt='github' className={styles.icon} />
             View the website
           </a>
           <a
             href='https://github.com/Lada496/your-photo-album/blob/main/README.md'
-            className={styles.githubWrap}>
+            className={styles.githubWrap}
+            target='_blank'>
             <img src={LinkToFile} alt='github' className={styles.icon} />
             Related articles
           </a>

@@ -46,13 +46,15 @@ const recipe = () => {
           <div className={styles.step}>Links</div>
           <a
             href='https://github.com/sh32321/recipe'
-            className={styles.githubWrap}>
+            className={styles.githubWrap}
+            target='_blank'>
             <img src={GitHub} alt='github' className={styles.icon} />
             View my code playground
           </a>
           <a
-            href='https://github.com/sh32321/recipe'
-            className={styles.githubWrap}>
+            href='https://recipe-foodie.netlify.app/'
+            className={styles.githubWrap}
+            target='_blank'>
             <img src={LinkToFile} alt='github' className={styles.icon} />
             View the website
           </a>
