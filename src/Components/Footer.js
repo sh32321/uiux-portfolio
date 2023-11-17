@@ -3,6 +3,7 @@ import Email from "../icons/email.svg"
 import Linkedin from "../icons/linkedin.svg"
 import styles from "./footer.module.scss"
 import Github from "../icons/github.svg"
+import Behance from "../icons/behance.svg"
 
 const Footer = () => {
   return (
@@ -12,6 +13,9 @@ const Footer = () => {
       </a>
       <a href='https://www.linkedin.com/in/guolily/' target='_blank'>
         <img src={Linkedin} alt='linkedin' className={styles.icons} />
+      </a>
+      <a href='https://www.behance.net/sh323218879' target='_blank'>
+        <img src={Behance} alt='linkedin' className={styles.icons} />
       </a>
       <a href='https://github.com/sh32321' target='_blank'>
         <img src={Github} alt='linkedin' className={styles.icons} />
