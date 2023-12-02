@@ -30,7 +30,8 @@ import Reviews from "../../img/moviescape/Users Review.png"
 import LinkToFile from "../../icons/link.svg"
 import { Link } from "react-scroll"
 import TopBtn from "../TopBtn"
-import Userflow from "../../img/moviescape/User-flow.png"
+import Userflow from "../../img/moviescape/User-flow.jpg"
+import DS from "../../img/moviescape/Design System.png"
 
 const Moviescape = () => {
   return (
@@ -161,6 +162,17 @@ const Moviescape = () => {
       <p className={styles.phase}>Iterative Design</p>
       <div className={styles.container}>
         <div>
+          <div className={styles.step}>Design System</div>
+          <img src={DS} alt='movie app' />
+        </div>
+
+        <div className={styles.stepWrap}>
+          <div className={styles.step}>User Flow</div>
+          <div className={styles.UTWrap}>
+            <img src={Userflow} alt='movie app' />
+          </div>
+        </div>
+        <div className={styles.stepWrap}>
           <div className={styles.step}>Initial Wireframe</div>
           <img src={LoFi} alt='movie app' />
         </div>
@@ -192,12 +204,12 @@ const Moviescape = () => {
             <img src={IterationV2} alt='movie app' />
           </div>
         </div>
-        <div className={styles.stepWrap}>
+        {/* <div className={styles.stepWrap}>
           <div className={styles.step}>User Flow</div>
           <div className={styles.UTWrap}>
             <img src={Userflow} alt='movie app' />
           </div>
-        </div>
+        </div> */}
         <div className={styles.stepWrap}>
           <div className={styles.step}>Final Design</div>
         </div>
