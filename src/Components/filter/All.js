@@ -58,7 +58,7 @@ const All = () => {
           <img src={Chatwis} />
           <div class={styles.info}>
             <h2>Chatwis.ai</h2>
-            <p>UI, Design to Develop</p>
+            <p>UIUX, AI chatbot</p>
             <Link to='/work/chatwis' target='_top' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
