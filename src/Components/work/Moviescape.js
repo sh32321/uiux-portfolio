@@ -66,7 +66,7 @@ const Moviescape = () => {
           <div className={styles.titleBox}>
             <h4>Prototyoe</h4>
             <a
-              href='https://www.figma.com/proto/WUblK6BD0PKc2rDo1N9N9t/UX-research?page-id=252%3A2162&type=design&node-id=252-2922&viewport=417%2C498%2C0.25&scaling=scale-down&starting-point-node-id=252%3A2794&show-proto-sidebar=1'
+              href='https://www.figma.com/proto/WUblK6BD0PKc2rDo1N9N9t/Moviescape?page-id=252%3A2162&type=design&node-id=252-2794&viewport=449%2C741%2C0.36&t=erBI4H5Vht5pjtIE-1&scaling=scale-down&starting-point-node-id=252%3A2794&mode=design'
               target='_blank'>
               <img src={LinkToFile} />
               Link to Figma
@@ -236,13 +236,13 @@ const Moviescape = () => {
           <p>A user flow of</p>
           <ul>
             <li className={styles.insightsWrap}>
+              Checking the nearest location and movie showtime
+            </li>
+            <li className={styles.insightsWrap}>
               Browsing movies and purchasing tickets
             </li>
             <li className={styles.insightsWrap}>
               Sharing tickets with your friends
-            </li>
-            <li className={styles.insightsWrap}>
-              Checking the nearest location and movie showtime
             </li>
           </ul>
           <div className={styles.prototype}>
