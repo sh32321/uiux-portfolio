@@ -73,7 +73,7 @@ const All = () => {
           <img src={Recipe} />
           <div class={styles.info}>
             <h2>Foodie Recipe</h2>
-            <p>Design, Coding, React</p>
+            <p>Web Design, Coding, React</p>
             <Link to='/work/recipe' target='_top' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
@@ -104,7 +104,7 @@ const All = () => {
           <img src={Jose} />
           <div class={styles.info}>
             <h2>Jose Gallery</h2>
-            <p>Design, Coding, React</p>
+            <p>Web Design, Coding, React</p>
             <Link to='/work/jose' target='_top' className={styles.viewBtn}>
               <li>View More</li>
             </Link>
