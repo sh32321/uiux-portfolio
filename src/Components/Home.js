@@ -15,7 +15,8 @@ const Home = () => {
       <section>
         <p className={styles.title}>Hi! I'm Lily. </p>
         <p className={styles.description}>
-          I am a UIUX designer and a React (front-end) lover in Canada.
+          I am a driven and innovative UI/UX designer with a background in
+          front-end development.
         </p>
         <img src={HeaderImg} className={styles.headerImg} />
         <Link to='work' spy={true} smooth={true}>
