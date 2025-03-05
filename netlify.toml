@@ -5,6 +5,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "https://lily-portfolio-info.netlify.app/:splat"
-  status = 301
-  force = true
+  to = "/index.html"
+  status = 200
